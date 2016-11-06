@@ -1,0 +1,30 @@
+html{
+	line-height: 1.5em;
+	font-family: 'Open-Sans', avenir, sans-serif;
+}
+
+body.admin-bar{
+ position: relative;
+}
+
+.container{
+	max-width: $container-width;
+}
+
+.home{
+	background-color: #fff;
+}
+
+.cta--center{
+	text-align: center;
+	width: 100%;
+	display: block;
+	float: left;
+}
+
+@media (max-width: $container-width){
+	.full-mobile{
+		padding: 0;
+		width: 100%;
+	}
+}

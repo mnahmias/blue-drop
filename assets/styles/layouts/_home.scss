@@ -1,0 +1,15 @@
+.scrolling-lines{
+	display: none;
+	margin: 0 auto;
+}
+
+.scrolling-lines--left{
+	@extend .scrolling-lines;
+	transform: scaleX(-1);
+}
+
+@media (min-width: $container-width) {
+	.scrolling-lines{
+		display: block;
+	}
+}

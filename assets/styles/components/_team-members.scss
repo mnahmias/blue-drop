@@ -1,0 +1,33 @@
+.team-member{
+	@extend .col-xs-12;
+	@extend .col-sm-6;
+}
+
+.team-member__wrapper{
+		background-color: #fff;
+		border-radius: 18px;
+		overflow: hidden;
+		margin-top: 3rem;
+		border: 1px solid #e8e8e8;
+}
+
+.team-member__image{
+	background-color: #000;
+}
+
+.team-member__name{
+	text-align: center;
+	color: #fff;
+	padding-top: 12rem;
+	margin: 0;
+}
+
+.team-member__title{
+	text-align: center;
+	color: #fff;
+	padding-bottom: 6rem;
+}
+
+.team-member__description{
+	padding: 2rem;
+}

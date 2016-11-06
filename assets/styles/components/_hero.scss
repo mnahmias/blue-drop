@@ -1,0 +1,59 @@
+.hero{
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	// height: 500px;
+}
+
+.hero__title{
+	color: #fff;
+	text-align: center;
+	font-size: 3.6rem;
+  padding-top: 8rem;
+  margin-bottom: 2.5rem;
+	font-weight: 300;
+}
+
+.hero__lede{
+	text-align: center;
+	color: #fff;
+	font-weight: 300;
+	padding-bottom: 10rem;
+	font-size: 2rem;
+	max-width: 500px;
+	margin: 0 auto;
+	padding: 0 3rem 10rem;
+}
+
+.hero--rain{
+	position: relative;
+}
+
+.hero--rain__canvas{
+	display: block;
+	margin: 0;
+	position: absolute;
+	top: 0;
+	z-index: -1;
+	border-bottom: 5px solid $brand-blue;
+	background-color: #fff;
+}
+
+.hero--rain__title{
+	@extend .sr-only;
+}
+
+.hero--rain__logo{
+	width: 100%;
+  text-align: center;
+  color: $font-color;
+  margin-top: 8rem;
+  text-transform: uppercase;
+}
+
+.hero--rain__lede{
+	@extend .hero__lede;
+	display: block;
+	color: $font-color;
+	margin-top: 1rem;
+}

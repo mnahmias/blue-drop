@@ -1,0 +1,46 @@
+.topbar{
+	@extend .navbar;
+	@extend .navbar-default;
+	background-color: #231F20;
+	border: 0;
+	margin: 0;
+	top:0;
+	left: 0;
+	width: 100%;
+	padding: 1px 0;
+}
+
+.topbar .navbar-nav .menu-item{
+	font-weight: 700;
+	// border: 2px solid transparent;
+}
+
+.topbar .navbar-nav .menu-item.active{
+	// border-radius: 30px;
+	// border: 2px solid $brand-blue;
+}
+
+.topbar .navbar-nav .menu-item a{
+	color: #fff;
+}
+.topbar .navbar-nav .menu-item.active a{
+	color: #fff;
+	text-decoration: underline;
+}
+
+.topbar .navbar-nav>.active>a{
+		background-color: transparent;
+		&:hover, &:active, &:focus{
+			background-color: transparent;
+		}
+}
+
+.topbar .navbar-nav>li>a{
+		padding: .5rem 1.5rem;
+}
+
+@media (min-width: $screen-sm-min) {
+	.topbar .navbar-nav>li{
+		margin:10px 0;
+	}
+}
