@@ -1,3 +1,8 @@
+.team{
+	overflow: auto;
+	margin-bottom: 3rem;
+}
+
 .team-member{
 	@extend .col-xs-12;
 	@extend .col-sm-6;
@@ -5,14 +10,29 @@
 
 .team-member__wrapper{
 		background-color: #fff;
-		border-radius: 18px;
 		overflow: hidden;
-		margin-top: 3rem;
+		margin: 3rem 0 0;
 		border: 1px solid #e8e8e8;
 }
 
 .team-member__image{
-	background-color: #000;
+	width: 100%;
+	// height: 210px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.team-member__image>img{
+	width: 100%;
+}
+
+.team-member__vertical-image{
+	padding:0;
+}
+
+.team-member__vertical-image>img{
+	width: 100%;
 }
 
 .team-member__name{
@@ -30,4 +50,10 @@
 
 .team-member__description{
 	padding: 2rem;
+}
+
+@media(min-width:$container-width){
+	.team-member__vertical-image{
+		padding: 20px 20px 20px 0;
+	}
 }

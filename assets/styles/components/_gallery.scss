@@ -6,7 +6,11 @@ body{
 }
 
 .gallery{
-  transition: .3s all ease-in-out;
+	@extend .col-xs-12;
+	overflow: auto;
+  width: 100%;
+  background-color: #7D7E81;
+	padding: 2rem;
 }
 
 .gallery-item{
@@ -25,24 +29,25 @@ body{
 }
 
 .gallery-item__container{
-  border-radius: 18px;
-  border: 1px solid #e8e8e8;
-  overflow: hidden;
-  margin: 2rem 0;
-  background: white;
+	border-radius: 18px;
+	overflow: hidden;
+	margin: 2rem 0;
+	color: #fff;
+	padding: 0 3rem;
 }
 
 .gallery-item__image{
-  height: 150px;
-  width: 100%;
-  background-color: #cecece;
+  height: 200px;
+  width: 200px;
+	margin: 0;
+  // background-color: #cecece;
   background-image: url('http://res.cloudinary.com/dlwatdu2o/image/upload/c_scale,w_750/v1472058003/11737.111.1079_c5fu27.jpg');
   background-position: 50% 50%;
   background-size: cover;
 }
 
 .gallery-item__content{
-  padding: 1rem 2rem;
+  // padding: 1rem 2rem;
 }
 
 .gallery-item__title{
@@ -51,12 +56,15 @@ body{
 
 .gallery-item__desc{
   font-size:16px;
-  padding: 1rem .5rem;
+  padding: 1rem 0;
 	font-weight: 300;
 }
 
 .gallery-item__button{
-	@extend .button;
+	color: #fff;
+	// text-align: right;
+	display: block;
+	font-weight: 600;
 }
 
 .gallery-item__full-text{
@@ -66,11 +74,11 @@ body{
 
 @media (min-width: $screen-md-min) {
   .gallery-item__content{
-    text-align: center;
+    text-align: left;
   }
   .gallery-item__title{
     padding-bottom: .5rem;
-    border-bottom: 2px solid $brand-green;
+    // border-bottom: 2px solid $brand-green;
   }
   .gallery-item--open .gallery-item__content{
     text-align: left;

@@ -1,6 +1,8 @@
 <?php use Roots\Sage\Titles; ?>
-
-<div class="hero m-header scene_element scene_element--fadein" style="background-image:url('<?php the_field('hero_image'); ?>')">
-	<div class="hero__title"><?php the_title(); ?></div>
-	<div class="hero__lede"><?php the_field('hero_lede'); ?></div>
-</div>
+<h1 class="hero__title"><?php the_title(); ?></h1>
+<?php if( get_field('hero_lede') ): ?>
+	<p class="hero__lede"><?php the_field('hero_lede'); ?></p>
+<?php endif; ?>
+<?php if( get_field('team_member_title') ): ?>
+	<p class="hero__lede"><?php the_field('team_member_title'); ?></p>
+<?php endif; ?>

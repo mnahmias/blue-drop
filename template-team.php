@@ -5,8 +5,11 @@
 ?>
 
 <?php while (have_posts()) : the_post(); ?>
-  <?php get_template_part('templates/page', 'header'); ?>
-	<div class="container">
+	<div class="row">
+		<div class="col-xs-12 hero">
+			<?php get_template_part('templates/page', 'header'); ?>
+		</div>
+	</div>
 	<?php $query = new WP_query( array(
    'post_type' => array('team_members')
     )
@@ -16,19 +19,16 @@
 	    <?php foreach ($query->posts as $post) { ?>
 			    <div id="<?php echo $post->post_name;?>" class="team-member">
 						<div class="team-member__wrapper">
-			        <div class="team-member__image" style="background-image:url('<?php the_field('team_member_image'); ?>')">
-								<h3 class="team-member__name"><?php the_title(); ?></h3>
-			          <p class="team-member__title"><?php the_field('team_member_title'); ?></p>
-							</div>
-							<div class="team-member__description">
-								<?php the_field('team_member_description'); ?>
-							</div>
+							<a href="<?php the_permalink(); ?>">
+								<div class="team-member__image">
+									<img src="<?php the_field('team_member_image'); ?>" />
+								</div>
+							</a>
 			      </div>
 					</div>
 	    <?php } ?>
 	    <?php wp_reset_postdata(); ?>
 	    </div>
-	  </div>
 	<?php } ?>
 	</div>
 <?php endwhile; ?>

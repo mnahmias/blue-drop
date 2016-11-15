@@ -2,58 +2,45 @@
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
-	// height: 500px;
+	background-color: #333;
+}
+
+.hero--home{
+	background-color: #333;
+	@extend .hero;
+}
+
+.hero__title--offscreen{
+		position: absolute;
+		left: -9999999px;
+		overflow: hidden;
 }
 
 .hero__title{
 	color: #fff;
-	text-align: center;
+	text-align: left;
 	font-size: 3.6rem;
-  padding-top: 8rem;
+  // padding-top: 8rem;
   margin-bottom: 2.5rem;
-	font-weight: 300;
+	font-weight: 600;
+}
+
+.hero--home .hero__title{
+	color: #fff;
 }
 
 .hero__lede{
-	text-align: center;
+	padding-top: 16rem;
+	text-align: left;
 	color: #fff;
 	font-weight: 300;
-	padding-bottom: 10rem;
-	font-size: 2rem;
-	max-width: 500px;
-	margin: 0 auto;
-	padding: 0 3rem 10rem;
+	// padding-bottom: 5rem;
+	font-size: 2.7rem;
+	padding: 0 0 3rem 0;
 }
 
-.hero--rain{
-	position: relative;
-}
-
-.hero--rain__canvas{
-	display: block;
-	margin: 0;
-	position: absolute;
-	top: 0;
-	z-index: -1;
-	border-bottom: 5px solid $brand-blue;
-	background-color: #fff;
-}
-
-.hero--rain__title{
-	@extend .sr-only;
-}
-
-.hero--rain__logo{
-	width: 100%;
-  text-align: center;
-  color: $font-color;
-  margin-top: 8rem;
-  text-transform: uppercase;
-}
-
-.hero--rain__lede{
-	@extend .hero__lede;
-	display: block;
-	color: $font-color;
-	margin-top: 1rem;
+@media(min-width:600px){
+	.hero{
+		padding: 4rem 100px;
+	}
 }

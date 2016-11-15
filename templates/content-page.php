@@ -1,3 +1,3 @@
-<div class="container m-page scene_element scene_element--fadeinup">
+<div class="container">
 	<?php the_content(); ?>
 </div>

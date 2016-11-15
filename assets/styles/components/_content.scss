@@ -1,0 +1,48 @@
+.content{
+	padding: 2rem 40px;
+	color: #343434;
+}
+
+.content p{
+	font-size: 1.8rem;
+	font-weight: 300;
+	line-height: 1.5em;
+	margin-bottom: 2rem;
+}
+
+.content li{
+	font-size: 1.8rem;
+	font-weight: 300;
+	line-height: 1.5em;
+	margin-bottom: 1rem;
+}
+
+.content h2{
+	font-size: 3rem;
+	font-weight: 600;
+	margin-bottom: 2rem;
+}
+
+.content--large{
+	@extend .content;
+	p{
+			font-size: 2.4rem;
+	}
+}
+
+.content--gray{
+	@extend .content;
+	background-color: #7D7E81;
+	color: #fff;
+}
+
+.content--large--gray{
+	@extend .content--gray;
+	@extend .content--large;
+}
+
+@media(min-width: $container-width){
+	.content{
+		padding: 4rem 100px;
+	}
+}
