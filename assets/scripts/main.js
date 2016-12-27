@@ -48,7 +48,7 @@
 
 				function affixAnchor(){
 					if($('#service-anchor').length){
-						console.log('running');
+						// console.log('running');
 						$('#service-anchor').affix({
 						  offset: {
 						    top: 250
@@ -57,18 +57,18 @@
 					}
 				};
 
-				function evenOutTeam(){
-					$('.team-member').equalHeights();
-				};
+				// function evenOutTeam(){
+				// 	$('.team-member').equalHeights();
+				// };
 
 				addBlacklistClass();
 				smoothScroll();
 				affixAnchor();
-				evenOutTeam();
-				$(window).resize(function(){
-				  $('.team-member').height('auto');
-				  $('.team-member').equalHeights();
-				});
+				// evenOutTeam();
+				// $(window).resize(function(){
+				//   $('.team-member').height('auto');
+				//   $('.team-member').equalHeights();
+				// });
 
 
 				if($('.admin-bar').length){
@@ -101,7 +101,7 @@
 										addBlacklistClass();
 										smoothScroll();
 										affixAnchor();
-										evenOutTeam();
+										// evenOutTeam();
 									}
 								}
 							},

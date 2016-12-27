@@ -46,8 +46,10 @@
 				endif;
 
 				?>
+				<?php if( get_field('service_link') ): ?>
+					<a class="button--inverse" href="<?php the_field('service_link'); ?>">Learn More About <?php the_title(); ?></a>
+				<?php endif; ?>
 			</div>
     </div>
-    <?php comments_template('/templates/comments.php'); ?>
   </article>
 <?php endwhile; ?>

@@ -6,3 +6,6 @@
 <?php if( get_field('team_member_title') ): ?>
 	<p class="hero__lede"><?php the_field('team_member_title'); ?></p>
 <?php endif; ?>
+<?php if( get_field('board_member_title') ): ?>
+	<p class="hero__lede"><?php the_field('board_member_title'); ?></p>
+<?php endif; ?>

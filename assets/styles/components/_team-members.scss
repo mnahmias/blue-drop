@@ -8,6 +8,11 @@
 	@extend .col-sm-6;
 }
 
+.team-member--board{
+	@extend .col-xs-12;
+	@extend .col-sm-4;
+}
+
 .team-member__wrapper{
 		background-color: #fff;
 		overflow: hidden;

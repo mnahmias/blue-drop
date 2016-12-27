@@ -16,7 +16,7 @@ body{
 .gallery-item{
 	@extend .col-xs-12;
 	@extend .col-sm-6;
-	@extend .col-md-4;
+	// @extend .col-md-4;
 }
 
 .gallery-item--open{

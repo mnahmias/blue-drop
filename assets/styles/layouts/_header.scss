@@ -1,10 +1,18 @@
 .header__logo{
 	width: 100%;
 	padding: 2rem 4rem;
+	max-width: 400px;
+  margin: 0 auto;
+  display: block;
 }
 
 .navbar-brand{
 	padding: 0;
 	height: auto;
 	width: 100%;
+}
+
+@media(min-width:$screen-md-min){
+	max-width: 0;
+	margin: 0;
 }

@@ -10,7 +10,8 @@
 			<?php get_template_part('templates/page', 'header'); ?>
 		</div>
 	<?php $query = new WP_query( array(
-   'post_type' => array('services')
+   'post_type' => array('services'),
+	 'orderby' => 'none'
     )
   );
   if ( $query->have_posts() ) { ?>
