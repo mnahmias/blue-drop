@@ -47,7 +47,7 @@
 
 				?>
 				<?php if( get_field('service_link') ): ?>
-					<a class="button--inverse" href="<?php the_field('service_link'); ?>">Learn More About <?php the_title(); ?></a>
+					<a class="button--inverse" target="_blank" href="<?php the_field('service_link'); ?>">Learn More About <?php the_title(); ?></a>
 				<?php endif; ?>
 			</div>
     </div>
