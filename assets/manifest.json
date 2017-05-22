@@ -22,6 +22,6 @@
     }
   },
   "config": {
-    "devUrl": "http://localhost/blue-drop"
+    "devUrl": "bluedrop.dev"
   }
 }

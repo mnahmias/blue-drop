@@ -46,6 +46,12 @@ body{
   background-size: cover;
 }
 
+.gallery-item__image-link{
+	display: block;
+	height: 100%;
+	width: 100%;
+}
+
 .gallery-item__content{
   // padding: 1rem 2rem;
 }
